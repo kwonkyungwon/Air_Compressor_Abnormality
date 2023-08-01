@@ -8,7 +8,7 @@
 <br>
 
 **평가** <br>
-<src="https://github.com/kwonkw/Air_Compressor_Abnormality/assets/131172214/97fbac40-0089-4d80-b2ab-15dc5729a99f">
+<img width="732" alt="스크린샷 2023-08-01 오후 5 00 07" src="https://github.com/kwonkw/Air_Compressor_Abnormality/assets/131172214/97fbac40-0089-4d80-b2ab-15dc5729a99f">
 - 심사 기준: F1-Score
 - Scikit-Learn에 내장된 F1-Score를 ‘macro’ 옵션으로 설정하여 평가에 사용
 - Macro F1-Score
