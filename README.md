@@ -8,7 +8,7 @@
 <br>
 
 **평가** <br>
-![image](https://github.com/ssyeon2/Flight-Delay-Prediction/assets/105052724/f2283b00-adfd-438a-80f4-81e8ab6b0c10)
+<src="https://github.com/kwonkw/Air_Compressor_Abnormality/assets/131172214/97fbac40-0089-4d80-b2ab-15dc5729a99f">
 - 심사 기준: F1-Score
 - Scikit-Learn에 내장된 F1-Score를 ‘macro’ 옵션으로 설정하여 평가에 사용
 - Macro F1-Score
