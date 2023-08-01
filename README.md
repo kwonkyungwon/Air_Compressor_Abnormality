@@ -59,6 +59,6 @@
 ### 5. 비지도 학습
 **LocalOutlierFactor** <br>
    - 비지도학습이므로 지도학습에 사용되는 GridSearch, RandomSearch 사용하지 않음
-   - - F1-Score 최종 0.9535302503<br>
+   - Macro F1-Score 최종 0.9535302503<br>
 <br>
 <br>
