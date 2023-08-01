@@ -10,6 +10,8 @@
 
 **평가** <br>
 <img width="461" alt="스크린샷 2023-08-01 오후 5 00 42" src="https://github.com/kwonkw/Air_Compressor_Abnormality/assets/131172214/35bf6dec-eb58-49e5-8e16-eda7b1f39c7c">
+
+
 - 심사 기준: F1-Score
 - Scikit-Learn에 내장된 F1-Score를 ‘macro’ 옵션으로 설정하여 평가에 사용
 - Macro F1-Score
@@ -56,9 +58,7 @@
 
 ### 5. 비지도 학습
 **LocalOutlierFactor** <br>
-   - 비지도학습이므로 지도학습에 사용되는 GridSearch, RandomSearch 사용하지 않음 <br>
-
-**최종 결과 및 성과**
-- F1-Score 최종 0.9535302503
+   - 비지도학습이므로 지도학습에 사용되는 GridSearch, RandomSearch 사용하지 않음
+   - - F1-Score 최종 0.9535302503<br>
 <br>
 <br>
