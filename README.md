@@ -62,7 +62,7 @@
 - 'Delay'
 
 ### 5. 비지도 학습
-- ***평균 앙상블(Average Ensemble)***
+***평균 앙상블(Average Ensemble)***
   - LocalOutlierFactor
   - IsolationForest
   - OncClassSVM
