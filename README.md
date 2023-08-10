@@ -38,14 +38,15 @@
 4) 열효율(Thermal Efficiency) = (입력공기온도 - 출력공기온도) / 입력공기온도
 5) 압력차이(Pressure drop): air_inflow - out_pressure로 압력 차이를 계산
 
-### 2. 정규화
-- type별로 분류 후 최대-최소 정규화(MinMaxSclaer)
-- 모두 같은 값을 가지는 out_pressure 제외
-
-### 3. HP
+### 2. 스케일링<br>
+1) 정규화
+  - type별로 분류 후 최대-최소 정규화(MinMaxScaling)
+  - 모두 같은 값을 가지는 out_pressure 제외
+2) 범주화
+  - HP별로 원핫인코딩(One-Hot-Encoding)
   
 ### 3. 주성분분석(PCA)
-- explained_varience_ratio를 확인한 결과 n_component를 2로 설정
+- explained_varience_ratio를 확인한 결과 n_component를 1로 설정
 
 ### 4. 사용 변수 추출
 - 'Month'
@@ -61,9 +62,12 @@
 - 'Delay'
 
 ### 5. 비지도 학습
--  One Class SVM
-**- LocalOutlierFactor** <br>
-   - 비지도학습이므로 지도학습에 사용되는 GridSearch, RandomSearch 사용하지 않음
-   - Macro F1-Score 최종 0.9535302503<br>
+- ***평균 앙상블(Average Ensemble)***
+  - LocalOutlierFactor
+  - IsolationForest
+  - OncClassSVM
+  - 각 모델에 대해 gridSearch 진행
+  - 각 모델의 예측 결과를 평균내에 임계값 0을 기준으로 정상(1), 비정상(1)로 분류
+  - Macro F1-Score 최종 0.9535302503<br>
 <br>
 <br>
