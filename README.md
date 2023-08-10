@@ -32,13 +32,17 @@
 
 ## 해결방안
 ### 1. 파생변수 생성 <br>
-1) hp 
+1) hp
 2) 회전력(Torque) = 9.55 x 모터전류(Motor Current) x 모터RPM(Motor RPM)
 3) 유효출력(Power) = 회전력(Torque) x 2 x π x 모터RPM(Motor RPM) / 60
 4) 열효율(Thermal Efficiency) = (입력공기온도 - 출력공기온도) / 입력공기온도
+5) 압력차이(Pressure drop): air_inflow - out_pressure로 압력 차이를 계산
 
 ### 2. 정규화
-- 직접 정상범위 설정 후 데이터 정규화
+- type별로 분류 후 최대-최소 정규화(MinMaxSclaer)
+- 모두 같은 값을 가지는 out_pressure 제외
+
+### 3. HP
   
 ### 3. 주성분분석(PCA)
 - explained_varience_ratio를 확인한 결과 n_component를 2로 설정
